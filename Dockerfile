@@ -10,8 +10,8 @@ ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
 
-# uncomment to remove a vulnerability
-#RUN rm /etc/ssl/private/ssl-cert-snakeoil.key
+# Comment next line to ADD a Compliance Vulnerability
+RUN rm /etc/ssl/private/ssl-cert-snakeoil.key
 
 EXPOSE 80
 
